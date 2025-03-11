@@ -1,0 +1,136 @@
+/* Global Styles */
+body {
+    background-color: #000000;
+    color: #CCD6F6;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Project Showcase Container */
+  .project-showcase {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .showcase-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: white;
+  }
+  
+  /* Projects Container */
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  /* Project Card Styling */
+  .project-card {
+    background-color: #112240;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .project-content {
+    padding: 1.5rem;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #8892B0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hashtags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hashtag {
+    background-color: #233554;
+    color: #64FFDA;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+  /* GitHub Button Styling */
+  .github-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #0A192F;
+    border: 2px solid #64FFDA;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .github-button:hover {
+    background-color: #64FFDA;
+    color: black;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .projects-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-card {
+      width: 100%;
+    }
+  }
+
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+  .footer {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #0A192F;
+    height:auto;
+   margin-top:auto;
+  }
