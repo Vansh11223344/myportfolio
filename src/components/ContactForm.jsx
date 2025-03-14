@@ -18,7 +18,7 @@ const ContactForm = () => {
 
     emailjs.sendForm(
       'service_nemnvdp',
-      'template_kbjeldb',
+      'template_24frk1a',
       e.target,
       'wa7lu9PVLioBjqoC7'
     )
@@ -55,10 +55,13 @@ const ContactForm = () => {
 
         <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
           <ul>
-            <li><a href="/projects">Projects</a></li>
-           {/* <li><a href="#experience">Experience</a></li>*/}
-            <li><Link to="/contact">Contact</Link></li>
-          </ul>
+                   <li><Link to="/">Home</Link></li>
+                   <li><Link to="/introduction">About</Link></li>
+                     <li><Link to="/projects">Projects</Link></li>
+                    {/* <li><a href="#experience">Experience</a></li>*/}
+                     <li><Link to="/contact">Contact</Link></li>
+         
+                   </ul>
         </nav>
 
         <div className="hamburger" onClick={toggleMenu}>
@@ -122,8 +125,8 @@ const ContactForm = () => {
           <a href="mailto:guptavansh607@gmail.com"><FaEnvelope /></a>
           <a href="https://github.com/Vansh11223344"><FaGithub /></a>
           <a href="https://www.linkedin.com/in/vansh-mahajan-565a602aa"><FaLinkedin /></a>
-          <a href="https://twitter.com/vansh"><FaTwitter /></a>
-          <a href="https://medium.com/@vansh"><FaMedium /></a>
+          <a href="https://x.com/VanshGupta50524"><FaTwitter /></a>
+         
         </div>
         <p style={{ color: '#f0f0f0', marginTop: '0.5rem' }}>© 2025 Vansh. All rights reserved.</p>
       </footer>

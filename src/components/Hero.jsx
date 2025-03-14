@@ -40,6 +40,8 @@ const Hero = () => {
 
         <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
           <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/introduction">About</Link></li>
             <li><Link to="/projects">Projects</Link></li>
            {/* <li><a href="#experience">Experience</a></li>*/}
             <li><Link to="/contact">Contact</Link></li>
@@ -64,7 +66,7 @@ const Hero = () => {
           style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
         >
           <img
-            src="/src/myimg3.jpg"
+            src="/myimg3.jpg"
             alt="Vansh Mahajan"
             style={{ width: '380px', height: '380px', borderRadius: '50%', marginBottom: '2rem' }}
           />
@@ -85,8 +87,8 @@ const Hero = () => {
           <a href="mailto:guptavansh607@gmail.com"><FaEnvelope /></a>
           <a href="https://github.com/Vansh11223344"><FaGithub /></a>
           <a href="https://www.linkedin.com/in/vansh-mahajan-565a602aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><FaLinkedin /></a>
-          <a href="https://twitter.com/vansh"><FaTwitter /></a>
-          <a href="https://medium.com/@vansh"><FaMedium /></a>
+          <a href="https://x.com/VanshGupta50524"><FaTwitter /></a>
+         
         </div>
         <p>© 2025 Vansh. All rights reserved.</p>
       </footer>
