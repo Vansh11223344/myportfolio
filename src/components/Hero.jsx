@@ -68,7 +68,7 @@ const Hero = () => {
           <img
             src="/myimg3.jpg"
             alt="Vansh Mahajan"
-            style={{ width: '300px', height: '300px', borderRadius: '50%', marginBottom: '2rem' }}
+            style={{ width: '250px', height: '250px', borderRadius: '50%', marginBottom: '2rem' }}
           />
           <h1>
             <span style={{ fontSize: '4rem', color: '#FFFFFF', fontFamily: 'Verdana, Geneva, sans-serif' }}>
