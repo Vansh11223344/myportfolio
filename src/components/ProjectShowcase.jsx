@@ -18,7 +18,7 @@ const ProjectShowcase = () => {
       title: 'Digital Apology',
       description: 'In this digital age, why not convey our apologies through a beautifully written, sincere message sent with warmth and care?',
       hashtags: ['#Html', '#CSS', '#Javascript','#ResponsiveDesign'],
-      image: '/public/sorry.webp',
+      image: '/sorry.webp',
       githubLink: 'https://sorryletter.netlify.app/',
     },
     {
@@ -26,7 +26,7 @@ const ProjectShowcase = () => {
       title: 'Portfolio Website',
       description: 'A modern and responsive website showcasing NSS activities that colleges do with the help of their volunteers.',
       hashtags: ['#Html', '#CSS', '#Javascript', '#ResponsiveDesign'],
-      image: '/public/nssimg.webp',
+      image: '/nssimg.webp',
       githubLink: 'https://nssmitmanipal.netlify.app/',
     },
   ];
