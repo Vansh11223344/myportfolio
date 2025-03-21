@@ -33,7 +33,7 @@ const ProjectShowcase = () => {
       id: 2,
       title: 'SkinCare Clinic Website',
       description: 'A modern and responsive website showcasing various skin care treatments and services  highlighting treatments, hair care, and laser procedures with elegant design and smooth user experience..',
-      hashtags: ['#React', '#CSS', '#ResponsiveDesign'],
+      hashtags: ['#React', '#CSS', '#ResponsiveDesign','#ChatSystem'],
       image: '/images/skincare.webp',
       githubLink: 'https://khuranaclinic.netlify.app/',
     },
