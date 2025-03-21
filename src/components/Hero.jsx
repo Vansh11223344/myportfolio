@@ -66,7 +66,7 @@ const Hero = () => {
           style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
         >
           <img
-            src="/myimg3.jpg"
+            src="./images/myimg3.jpg"
             alt="Vansh Mahajan"
             style={{ width: '250px', height: '250px', borderRadius: '50%', marginBottom: '2rem' }}
           />
