@@ -148,7 +148,7 @@ const Introduction = () => {
           </Card>
         </CardContainer>
 
-        <Button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} as="a" href="/public/Vansh_Resume.pdf" target="_blank" rel="noopener noreferrer">
+        <Button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={() => window.open('/Vansh_Resume.pdf', '_blank', 'noopener,noreferrer')}>
           View Resume →
         </Button>
       </Section>
