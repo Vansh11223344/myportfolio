@@ -68,15 +68,15 @@ const Hero = () => {
           <img
             src="./images/myimg3.jpg"
             alt="Vansh Mahajan"
-            style={{ width: '250px', height: '250px', borderRadius: '50%', marginBottom: '2rem' }}
+            style={{ width: '245px', height: '245px', borderRadius: '50%', marginBottom: '2rem' }}
           />
           <h1>
-            <span style={{ fontSize: '4rem', color: '#FFFFFF', fontFamily: 'Verdana, Geneva, sans-serif' }}>
+            <span style={{ fontSize: '3.8rem', color: '#FFFFFF', fontFamily: 'Verdana, Geneva, sans-serif' }}>
               Hi, I'm <span style={{ color: '#FFD700' }}>Vansh</span>
             </span>
           </h1>
           <p style={{ fontSize: '1.5rem', marginTop: '1rem' }}>
-            I love to learn and build scalable and optimized frontend systems.
+          I love to learn and build scalable, optimized systems — from intuitive frontends to robust backends.
           </p>
         </motion.div>
       </section>
