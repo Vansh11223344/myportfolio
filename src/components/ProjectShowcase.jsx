@@ -14,28 +14,28 @@ const ProjectShowcase = () => {
 
   const projects = [
     {
-      id: 1,
-      title: 'Digital Apology',
-      description: 'In this digital age, why not convey our apologies through a beautifully written, sincere message sent with warmth and care?',
-      hashtags: ['#Html', '#CSS', '#Javascript','#ResponsiveDesign'],
-      image: '/images/sorry.webp',
-      githubLink: 'https://sorryletter.netlify.app/',
-    },
-    {
-      id: 2,
-      title: 'Portfolio Website',
-      description: 'A modern and responsive website showcasing NSS activities that colleges do with the help of their volunteers.',
-      hashtags: ['#Html', '#CSS', '#Javascript', '#ResponsiveDesign'],
-      image: '/images/nssimg.webp',
-      githubLink: 'https://nssmitmanipal.netlify.app/',
-    },
-    {
       id: 2,
       title: 'SkinCare Clinic Website',
       description: 'A modern and responsive website showcasing various skin care treatments and services  highlighting treatments, hair care, and laser procedures with elegant design and smooth user experience..',
       hashtags: ['#React', '#CSS', '#ResponsiveDesign','#ChatSystem'],
       image: '/images/skincare.webp',
       githubLink: 'https://khuranaclinic.netlify.app/',
+    },
+    {
+      id: 2,
+      title: 'MIT NSS Website',
+      description: 'A modern and responsive website showcasing NSS activities that colleges do with the help of their volunteers.',
+      hashtags: ['#Html', '#CSS', '#Javascript', '#ResponsiveDesign'],
+      image: '/images/nssimg.webp',
+      githubLink: 'https://nssmitmanipal.netlify.app/',
+    },
+    {
+      id: 1,
+      title: 'Digital Apology',
+      description: 'In this digital age, why not convey our apologies through a beautifully written, sincere message sent with warmth and care?',
+      hashtags: ['#Html', '#CSS', '#Javascript','#ResponsiveDesign'],
+      image: '/images/sorry.webp',
+      githubLink: 'https://sorryletter.netlify.app/',
     },
   ];
 
@@ -62,9 +62,9 @@ const ProjectShowcase = () => {
 
         <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
           <ul>
-                   <li><Link to="/">Home</Link></li>
+                {/*}   <li><Link to="/">Home</Link></li>
                    <li><Link to="/introduction">About</Link></li>
-                     <li><Link to="/projects">Projects</Link></li>
+                 */}    <li><Link to="/projects">Projects</Link></li>
                     {/* <li><a href="#experience">Experience</a></li>*/}
                      <li><Link to="/contact">Contact</Link></li>
          
