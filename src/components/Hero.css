@@ -9,7 +9,8 @@ body {
 
 .spider-canvas {
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 0;
@@ -19,7 +20,7 @@ body {
 .header {
   width: 100%;
   padding: 1.2rem 2rem;
-  background: rgba(10,10,10,0.8);
+  background: rgba(10, 10, 10, 0.8);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,11 +36,57 @@ body {
 }
 
 .nav ul {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: rgba(20, 20, 20, 0.98);
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  gap: 1.2rem;
+  z-index: 10;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
+.nav.open ul {
   display: flex;
-  gap: 2rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Hamburger should always be visible */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+  z-index: 7;
+  position: relative;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background: #CCD6F6;
+  border-radius: 2px;
+}
+
+/* Horizontal nav layout on large screens */
+@media (min-width: 800px) {
+  .nav.open ul {
+    flex-direction: row;
+    position: static;
+    background: transparent;
+    padding: 0;
+    gap: 2rem;
+    transform: none;
+    opacity: 1;
+  }
 }
 
 .nav ul li a {
@@ -51,43 +98,6 @@ body {
 
 .nav ul li a:hover {
   color: #FFD700;
-}
-
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 4px;
-  z-index: 7;
-  position: relative; 
-}
-
-.hamburger .line {
-  width: 25px;
-  height: 3px;
-  background: #CCD6F6;
-  border-radius: 2px;
-}
-
-@media (max-width: 800px) {
-  .nav ul {
-    display: none;
-  }
-  .nav.open ul {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background: rgba(20,20,20,0.98);
-    padding: 1.5rem 2rem;
-    border-radius: 8px;
-    gap: 1.2rem;
-    z-index: 10;
-  }
-  .hamburger {
-    display: flex;
-  }
 }
 
 .hero {
@@ -103,10 +113,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(20,20,20,0.7);
+  background: rgba(20, 20, 20, 0.7);
   padding: 2.5rem 2rem;
   border-radius: 18px;
-  box-shadow: 0 6px 32px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 32px 6px rgba(0, 0, 0, 0.15);
 }
 
 .hero-img {
@@ -141,7 +151,7 @@ body {
   width: 100%;
   text-align: center;
   padding: 1.5rem 0 1rem 0;
-  background: rgba(10,10,10,0.8);
+  background: rgba(10, 10, 10, 0.8);
   color: #CCD6F6;
   position: relative;
   z-index: 1;
@@ -163,20 +173,4 @@ body {
 .social-icons a:hover {
   color: #fff;
   transform: scale(1.18);
-}
-
-
-
-.nav ul {
-  transition: all 0.3s ease;
-  opacity: 0;
-  transform: translateY(-10px);
-  pointer-events: none;
-  position: absolute;
-}
-
-.nav.open ul {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
 }
