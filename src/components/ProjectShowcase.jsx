@@ -15,6 +15,14 @@ const ProjectShowcase = () => {
   const projects = [
     {
       id: 2,
+      title: 'Navyug Innovations',
+      description: 'A modern platform showcasing Navyug’s intelligent EV diagnostics, skilling, and charging solutions—highlighting deep-tech innovation, rural empowerment, and seamless electric mobility with a clean, professional design and smooth user experience.',
+      hashtags: ['#React', '#CSS', '#ChatBot','#ResponsiveDesign'],
+      image: '/images/navyuglogo.jpeg',
+      githubLink: 'https://navyugin.com/',
+    },
+    {
+      id: 2,
       title: 'SkinCare Clinic Website',
       description: 'A modern and responsive website showcasing various skin care treatments and services  highlighting treatments, hair care, and laser procedures with elegant design and smooth user experience..',
       hashtags: ['#React', '#CSS', '#ResponsiveDesign','#ChatSystem'],
@@ -43,12 +51,7 @@ const ProjectShowcase = () => {
     <>
       {/* Header */}
       <header className="header">
-        <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/introduction">About</Link></li>
-          </ul>
-        </nav>
+     
 
         <motion.div
           className="logo"

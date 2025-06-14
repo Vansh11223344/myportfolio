@@ -36,12 +36,6 @@ const ContactForm = () => {
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
       <header className="header">
-        <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/introduction">About</Link></li>
-          </ul>
-        </nav>
 
         <motion.div
           className="logo"

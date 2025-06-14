@@ -91,12 +91,7 @@ const Introduction = () => {
   return (
     <div className="app-container">
       <header className="header">
-        <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/introduction">About</Link></li>
-          </ul>
-        </nav>
+       
 
         <motion.div
           className="logo"
