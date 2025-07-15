@@ -14,36 +14,48 @@ const ProjectShowcase = () => {
 
   const projects = [
     {
-      id: 2,
+      id: 1,
       title: 'Navyug Innovations',
       description: 'A modern platform showcasing Navyug’s intelligent EV diagnostics, skilling, and charging solutions—highlighting deep-tech innovation, rural empowerment, and seamless electric mobility with a clean, professional design and smooth user experience.',
-      hashtags: ['#React', '#CSS', '#ChatBot','#ResponsiveDesign'],
+      hashtags: ['#React', '#CSS', '#ChatBot', '#ResponsiveDesign', "#EmailJS", "#EmailAutomation"],
       image: '/images/navyuglogo.jpeg',
       githubLink: 'https://navyugin.com/',
     },
+
     {
       id: 2,
+      title: 'BoneUp - Gamified To-Do List Manager',
+      description: "A gamified to-do list manager for JEE & NEET aspirants, transforming study routines into an engaging experience with task tracking, XP points ('bones'), levels, and streaks—featuring a clean, responsive design and seamless PWA functionality for enhanced productivity.",
+      hashtags: ["#PHP" , "#HTML" , "#CSS", "#JavaScript", "#PWA", "#ResponsiveDesign", "#Gamification"],
+      image: '/images/boneup.jpg',
+      githubLink: 'https://boneup.mentallyprepare.in/',
+    },
+
+    {
+      id: 3,
       title: 'SkinCare Clinic Website',
       description: 'A modern and responsive website showcasing various skin care treatments and services  highlighting treatments, hair care, and laser procedures with elegant design and smooth user experience..',
-      hashtags: ['#React', '#CSS', '#ResponsiveDesign','#ChatSystem'],
-      image: '/images/skincare.webp',
+      hashtags: ['#React', '#CSS', '#ResponsiveDesign', "#EmailJS", "#EmailAutomation"],
+      image: '/images/skincare.png',
       githubLink: 'https://khuranaclinic.netlify.app/',
     },
+
     {
-      id: 2,
+      id: 4,
       title: 'MIT NSS Website',
       description: 'A modern and responsive website showcasing NSS activities that colleges do with the help of their volunteers.',
       hashtags: ['#Html', '#CSS', '#Javascript', '#ResponsiveDesign'],
       image: '/images/nssimg.webp',
       githubLink: 'https://nssmitmanipal.netlify.app/',
     },
+
     {
-      id: 1,
-      title: 'Digital Apology',
-      description: 'In this digital age, why not convey our apologies through a beautifully written, sincere message sent with warmth and care?',
-      hashtags: ['#Html', '#CSS', '#Javascript','#ResponsiveDesign'],
-      image: '/images/sorry.webp',
-      githubLink: 'https://sorryletter.netlify.app/',
+      id: 5,
+      title: 'Medicine-Management-System',
+      description: 'A modern and responsive medicine management system showcasing seamless prescription ordering, billing, and reporting, crafted to enhance pharmacy operations with elegance and efficiency.',
+      hashtags: ['#React', '#JavaScript', '#CSS', '#ResponsiveDesign', '#MaterialUI', '#PharmacyApp', '#WebDevelopment'],
+      image: '/images/medmgs.webp',
+      githubLink: 'https://medicinemanage.netlify.app/',
     },
   ];
 
