@@ -142,7 +142,7 @@ const Hero = () => {
           transition={{ duration: 2.5 }}
         >
           <img
-            src="./images/myimg3.jpg"
+            src="./images/myimg.webp"
             alt="Vansh Mahajan"
             className="hero-img"
           />

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaCode, FaCamera, FaLaptopCode } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaCode, FaCamera, FaLaptopCode, FaFeatherAlt } from 'react-icons/fa';
 import styled from 'styled-components';
 import './Introduction.css';
 
@@ -123,8 +123,12 @@ const Introduction = () => {
       <Section>
         <Title>Introduction 👋</Title>
         <Description>
-          Hi, I'm a <a href="https://www.linkedin.com/in/vansh-mahajan-565a602aa" target="_blank" rel="noopener noreferrer" className="green-button" style={{ color: '#00FF00' }}>Web/App Developer</a> with a passion for building scalable and optimized systems. 
-          I'm also into photography📸. It's not just a hobby; I see it as a way to capture moments🌟📷, tell stories. 👨‍💻📚🌟
+          Hi, I'm a <a href="https://www.linkedin.com/in/vansh-mahajan-565a602aa" target="_blank" rel="noopener noreferrer" className="green-button" style={{ color: '#00FF00', fontWeight: 'bold' }}>Web/App Developer</a> and a <span style={{ color: '#00FF00', fontWeight: 'bold' }}>Software Developer</span> with a passion for creating scalable, high-performance systems that solve real-world problems. 👨‍💻⚙️🚀
+
+          I'm also deeply into <span style={{ color: '#00FF00' }}>Photography</span>📸 — not just as a hobby, but as a way to capture emotions, preserve moments, and tell visual stories. 🌅📷✨
+
+          Alongside that, I’m a <span style={{ color: '#00FF00' }}>Writer & Poet</span> ✍️📝 — someone who finds beauty in words and meaning in expression. Whether it’s through code, imagery, or poetry, I love creating things that connect, inspire, and endure. 💡📚🌟
+
         </Description>
 
         <CardContainer>
@@ -142,6 +146,12 @@ const Introduction = () => {
             <Icon><FaCamera /></Icon>
             <CardTitle>Photographer</CardTitle>
           </Card>
+
+          <Card initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+            <Icon><FaFeatherAlt /></Icon>
+            <CardTitle>Writer</CardTitle>
+          </Card>
+
         </CardContainer>
 
         <Button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={() => window.open('/Vansh_Resume.pdf', '_blank', 'noopener,noreferrer')}>

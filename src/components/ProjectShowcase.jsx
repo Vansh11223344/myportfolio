@@ -57,6 +57,15 @@ const ProjectShowcase = () => {
       image: '/images/medmgs.webp',
       githubLink: 'https://medicinemanage.netlify.app/',
     },
+
+    {
+      id: 6,
+      title: 'Game-Zone',
+      description: 'A next-gen gaming platform delivering ultra-immersive, realistic experiences through seamless interaction, dynamic visuals, and authentic gameplay—blending cutting-edge technology with engaging content for all players.',
+      hashtags: ['#React', '#JavaScript', '#CSS', '#40+ Games', '#ResponsiveDesign', '#Game', '#WebDevelopment'],
+      image: '/images/game.webp',
+      githubLink: 'https://gameculture.netlify.app/',
+    },
   ];
 
   return (
