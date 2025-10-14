@@ -36,6 +36,35 @@ body, html {
     color: white;
 }
 
+/* Tab Navigation */
+.tab-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tab-button {
+    padding: 0.8rem 2rem;
+    background-color: #112240;
+    border: none;
+    border-radius: 5px;
+    color: #CCD6F6;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-button.active {
+    background-color: #64FFDA;
+    color: #0A192F;
+}
+
+.tab-button:hover {
+    background-color: #64FFDA;
+    color: #0A192F;
+}
+
 /* Projects Container */
 .projects-container {
     display: flex;
@@ -146,5 +175,15 @@ body, html {
     .project-card {
         width: 100%;
         min-height: 400px; /* Adjust for smaller screens */
+    }
+
+    .tab-navigation {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .tab-button {
+        width: 100%;
+        padding: 0.8rem;
     }
 }
